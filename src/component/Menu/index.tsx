@@ -14,7 +14,7 @@ function Menu() {
           <Nav className="me-auto">
             <NavLink className={'nav-link'} to="/">Products</NavLink>
             <NavLink className={'nav-link'} to="/categories">Categories</NavLink>
-            <NavLink className={'nav-link'} to="/product/add">Add Product</NavLink>
+            <NavLink className={'nav-link'} to="/products/add">Add Product</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

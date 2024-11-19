@@ -7,36 +7,35 @@ import { MyError } from "../pages/MyError";
 import { Product } from "../pages/Product";
 import { Products } from "../pages/Products";
 
-
 export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Layout/>,
-        children: [
-            {
-                path: '',
-                element: <Products/>
-            },
-            {
-                path: 'product/:id',
-                element: <Product/>
-            },
-            {
-                path: 'categories',
-                element: <Categories/>
-            },
-            {
-                path: 'category/:id',
-                element: <Category/>
-            },
-            {
-                path: 'products/add',
-                element: <AddProduct/>
-            },
-            {
-                path: '*',
-                element: <MyError/>
-            }
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "",
+        element: <Products />,
+      },
+      {
+        path: "product/:id",
+        element: <Product />,
+      },
+      {
+        path: "categories",
+        element: <Categories />,
+      },
+      {
+        path: "category/:id",
+        element: <Category />,
+      },
+      {
+        path: "products/add",
+        element: <AddProduct />,
+      },
+      {
+        path: "*",
+        element: <MyError />,
+      },
+    ],
+  },
+]);
